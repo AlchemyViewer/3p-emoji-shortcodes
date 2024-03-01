@@ -24,10 +24,10 @@ else
     autobuild="$AUTOBUILD"
 fi
 
-python3 "$TOP_DIR"/gen_emoji_characters.py "$SRC_DIR"/packages/data stage/xui
+python "$TOP_DIR"/gen_emoji_characters.py "$SRC_DIR"/packages/data stage/xui
 
 mkdir -p "$STAGING_DIR"/LICENSES
 cp "$SRC_DIR"/LICENSE "$STAGING_DIR"/LICENSES/emojibase-license.txt
 
 # Read the EmojiBase version from core package.json file and use it to build this package version
-python3 "$TOP_DIR"/get_version.py "${SRC_DIR}/packages/core/package.json" ${VERSION_PATH} ${AUTOBUILD_BUILD_ID:=0}
+python "$TOP_DIR"/get_version.py "${SRC_DIR}/packages/core/package.json" ${VERSION_PATH} ${AUTOBUILD_BUILD_ID:=0}
