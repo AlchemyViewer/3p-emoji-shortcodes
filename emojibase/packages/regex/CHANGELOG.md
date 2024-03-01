@@ -1,3 +1,89 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## 15.3.0 - 2023-12-03
+
+#### 🚀 Updates
+
+- Support Emoji v15.1. (#164) ([b2e0ec6](https://github.com/milesj/emojibase/commit/b2e0ec6)), closes [#164](https://github.com/milesj/emojibase/issues/164)
+
+**Note:** Version bump only for package emojibase-regex
+
+
+
+
+
+## 15.2.0 - 2023-10-06
+
+#### 🚀 Updates
+
+- Add hi (Hindi) language. (#165) ([ada3784](https://github.com/milesj/emojibase/commit/ada3784)), closes [#165](https://github.com/milesj/emojibase/issues/165)
+
+#### 📘 Docs
+
+- Update file sizes. ([bb8b93a](https://github.com/milesj/emojibase/commit/bb8b93a))
+
+**Note:** Version bump only for package emojibase-regex
+
+
+
+
+
+## 15.1.0 - 2023-10-03
+
+#### 🚀 Updates
+
+- Add `bn` (Bengali) language. (#161) ([84ea37c](https://github.com/milesj/emojibase/commit/84ea37c)), closes [#161](https://github.com/milesj/emojibase/issues/161)
+
+#### 🛠 Internals
+
+- Fix invalid dev dependency. ([e81c4f1](https://github.com/milesj/emojibase/commit/e81c4f1))
+
+**Note:** Version bump only for package emojibase-regex
+
+
+
+
+
+# 15.0.0 - 2023-06-11
+
+#### 🎉 Release
+
+- Support emoji v15! (#146) ([55286b1](https://github.com/milesj/emojibase/commit/55286b1)), closes [#146](https://github.com/milesj/emojibase/issues/146)
+
+#### 💥 Breaking
+
+- Align emojibase version with spec. ([614dda2](https://github.com/milesj/emojibase/commit/614dda2))
+
+#### 📦 Dependencies
+
+- **[packemon]** Update to v3. ([ecc31da](https://github.com/milesj/emojibase/commit/ecc31da))
+
+#### 🛠 Internals
+
+- Fix broken docs. ([5eba8d0](https://github.com/milesj/emojibase/commit/5eba8d0))
+- Get website API build working. ([0cb4284](https://github.com/milesj/emojibase/commit/0cb4284))
+- Migrate from beemo to moon. (#144) ([0607d6e](https://github.com/milesj/emojibase/commit/0607d6e)), closes [#144](https://github.com/milesj/emojibase/issues/144)
+- Update release script. ([8dfdc16](https://github.com/milesj/emojibase/commit/8dfdc16))
+
+**Note:** Version bump only for package emojibase-regex
+
+
+
+
+
+# 15.0.0 - 2023-06-10
+
+#### 🎉 Release
+
+- Emojibase versions will now align with the emoji/unicode versions.
+- Updated to [Emoji 15](https://emojipedia.org/emoji-15.0/) and
+  [Unicode 15](http://unicode.org/versions/Unicode15.0.0/).
+  - 21 new emoji (31 including skin tones variations).
+- Updated to [CLDR 42](http://cldr.unicode.org/index/downloads/cldr-42).
+
 ### 6.0.1 - 2021-12-19
 
 #### 🛠 Internals

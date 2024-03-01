@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14, 16, 18]
+        node-version: [16, 18, 20]
       fail-fast: true
     steps:
       - uses: actions/checkout@v3
@@ -40,6 +40,7 @@ jobs:
     strategy:
       matrix:
         locale:
+          - bn
           - da
           - de
           - en-gb
@@ -48,6 +49,7 @@ jobs:
           - et
           - fi
           - fr
+          - hi
           - hu
           - it
           - ja
@@ -86,3 +88,5 @@ jobs:
       - run: yarn install --immutable
       - run: yarn run pack
       - run: cd website && yarn run build
+        env:
+          NODE_OPTIONS: --openssl-legacy-provider

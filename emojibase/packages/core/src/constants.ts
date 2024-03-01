@@ -48,9 +48,9 @@ export const SKIN_KEY_DARK: SkinToneKey = 'dark';
 
 // Important release versions and locales in generating accurate data.
 
-export const LATEST_EMOJI_VERSION = '14.0';
-export const LATEST_UNICODE_VERSION = '14.0.0';
-export const LATEST_CLDR_VERSION = '40';
+export const LATEST_EMOJI_VERSION = '15.1';
+export const LATEST_UNICODE_VERSION = '15.1.0';
+export const LATEST_CLDR_VERSION = '44';
 
 export const FIRST_UNICODE_EMOJI_VERSION = '6.0.0';
 export const EMOJI_VERSIONS = [
@@ -65,6 +65,8 @@ export const EMOJI_VERSIONS = [
 	'13.0',
 	'13.1',
 	'14.0',
+	'15.0',
+	'15.1',
 ];
 export const UNICODE_VERSIONS = [
 	'6.0',
@@ -80,9 +82,12 @@ export const UNICODE_VERSIONS = [
 	'12.1',
 	'13.0',
 	'14.0',
+	'15.0',
+	'15.1',
 ];
 
 export const SUPPORTED_LOCALES: Locale[] = [
+	'bn', // Bangla
 	'da', // Danish
 	'de', // German
 	'en', // English
@@ -92,6 +97,7 @@ export const SUPPORTED_LOCALES: Locale[] = [
 	'et', // Estonian
 	'fi', // Finnish
 	'fr', // French
+	'hi', // Hindi
 	'hu', // Hungarian
 	'it', // Italian
 	'ja', // Japanese

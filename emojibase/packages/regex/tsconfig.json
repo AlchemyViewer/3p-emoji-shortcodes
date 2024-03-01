@@ -6,12 +6,12 @@
     "emitDeclarationOnly": true
   },
   "exclude": [
-    "dts",
+    "node_modules",
     "tests"
   ],
   "extends": "../../tsconfig.options.json",
   "include": [
-    "src/**/*",
+    "**/*",
     "types/**/*",
     "../../types/**/*"
   ],

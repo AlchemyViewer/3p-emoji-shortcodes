@@ -19,6 +19,15 @@ const CUSTOM_SHORTCODES: Record<string, string> = {
 	t_rex: 'trex',
 };
 
+function decodeEscapeSequence(value: string) {
+	const replacer = (all: string, match: string) => String.fromCodePoint(Number.parseInt(match, 16));
+
+	return value
+		.replace(/\\x{([\dA-Fa-f]{2})}/g, replacer)
+		.replace(/\\x([\dA-Fa-f]{2})/g, replacer)
+		.normalize();
+}
+
 // @ts-expect-error CJS compat
 const { default: Kuroshiro } = KuroshiroImport;
 const kuroshiro = new Kuroshiro();
@@ -29,7 +38,7 @@ async function slugify(
 	po: POManager,
 	transform: boolean = false,
 ): Promise<string> {
-	let slug = value.trim();
+	let slug = decodeEscapeSequence(value.trim());
 
 	if (transform) {
 		// Japanese: https://github.com/dzcpy/transliteration/issues/226
@@ -93,7 +102,7 @@ export async function generateCldr(db: Database) {
 			for (const emoji of db.emojiList) {
 				const row = annotations[emoji.hexcode] || annotations[stripHexcode(emoji.hexcode)];
 
-				if (!row || !row.annotation || cldr[emoji.hexcode]) {
+				if (!row?.annotation || cldr[emoji.hexcode]) {
 					// eslint-disable-next-line no-continue
 					continue;
 				}

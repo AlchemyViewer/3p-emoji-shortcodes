@@ -103,6 +103,7 @@ export type SubgroupKey =
 	| 'hand-prop'
 	| 'hand-single-finger'
 	| 'hands'
+	| 'heart'
 	| 'hotel'
 	| 'household'
 	| 'keycap'
@@ -253,6 +254,7 @@ export interface MessagesDataset {
 }
 
 export type Locale =
+	| 'bn'
 	| 'da'
 	| 'de'
 	| 'en-gb'
@@ -262,6 +264,7 @@ export type Locale =
 	| 'et'
 	| 'fi'
 	| 'fr'
+	| 'hi'
 	| 'hu'
 	| 'it'
 	| 'ja'

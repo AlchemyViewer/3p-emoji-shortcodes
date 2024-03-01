@@ -107,7 +107,8 @@ An alias for the [`iamcal`](#iamcal) preset.
 
 | Locale                   | `cldr` | `cldr-native` | `emojibase` | `emojibase-legacy` | `github` | `iamcal` | `joypixels` |
 | ------------------------ | :----: | :-----------: | :---------: | :----------------: | :------: | :------: | :---------: |
-| Chinese (zh)             |   ✅   |      ✅       |     ✳️      |                    |          |          |             |
+| Bengali (bn)             |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
+| Chinese (zh)             |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
 | Chinese, Trad. (zh-hant) |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
 | Danish (da)              |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
 | Dutch (nl)               |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
@@ -117,19 +118,20 @@ An alias for the [`iamcal`](#iamcal) preset.
 | Finnish (fi)             |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
 | French (fr)              |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
 | German (de)              |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
+| Hindu (hi)               |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
 | Hungarian (hu)           |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
 | Italian (it)             |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
-| Japanese (ja)            |   ✅   |      ✅       |     ✳️      |                    |          |          |             |
+| Japanese (ja)            |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
 | Korean (ko)              |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
 | Lithuanian (lt)          |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
 | Malay (ms)               |   ✅   |               |     ✴️      |                    |          |          |             |
 | Norwegian (nb)           |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
 | Polish (pl)              |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
 | Portuguese (pt)          |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
-| Russian (ru)             |   ✅   |      ✅       |     ✳️      |                    |          |          |             |
+| Russian (ru)             |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
 | Spanish (es)             |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
 | Spanish, Mexico (es-mx)  |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
-| Swedish (sv)             |   ✅   |      ✅       |     ✅      |                    |          |          |             |
+| Swedish (sv)             |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
 | Thai (th)                |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
 | Ukrainian (uk)           |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
 
@@ -148,4 +150,4 @@ Some caveats to be aware of when using shortcodes.
 - There may be duplicate and/or conflicting shortcodes when using multiple presets.
 - Presets may not provide shortcodes for the latest emoji/Unicode specifications.
 
-[cldr]: http://cldr.unicode.org/index/downloads/cldr-40
+[cldr]: http://cldr.unicode.org/index/downloads/cldr-42

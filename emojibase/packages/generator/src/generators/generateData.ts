@@ -178,14 +178,13 @@ async function generateMessages(locale: Locale): Promise<unknown> {
 						break;
 					}
 
-					case 'SKIN TONE': {
+					case 'SKIN TONE':
 						skinTones.push({
 							key: meta.trim(),
 							message: String(item.msgstr),
 						} as SkinToneMessage);
 
 						break;
-					}
 
 					default:
 						break;
@@ -278,7 +277,7 @@ export async function generateData(): Promise<void> {
 		writeDataset('meta/hexcodes.json', hexcodes),
 	]);
 
-	const groupCache = readCache('final/group-hierarchy.json');
+	const groupCache = readCache('temp/group-hierarchy.json');
 
 	if (groupCache) {
 		await writeDataset('meta/groups.json', groupCache);

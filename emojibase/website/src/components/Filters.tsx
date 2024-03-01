@@ -21,6 +21,7 @@ import styles from './styles.module.css';
 const isBrowser = typeof location !== 'undefined';
 
 export const LOCALES: { [K in Locale]: string } = {
+	bn: 'Bangla',
 	da: 'Danish',
 	de: 'German',
 	'en-gb': 'English, Great Britain',
@@ -30,6 +31,7 @@ export const LOCALES: { [K in Locale]: string } = {
 	et: 'Estonian',
 	fi: 'Finnish',
 	fr: 'French',
+	hi: 'Hindi',
 	hu: 'Hungarian',
 	it: 'Italian',
 	ja: 'Japanese',
@@ -360,7 +362,7 @@ export default function Filters({
 					<label htmlFor="subgroup">Subgroup</label>
 
 					<select
-						disabled={disabled || !groupsMeta || !groupsMeta.hierarchy[group] || !subgroupLabels}
+						disabled={disabled || !groupsMeta?.hierarchy[group] || !subgroupLabels}
 						id="subgroup"
 						name="subgroup"
 						value={subgroup}

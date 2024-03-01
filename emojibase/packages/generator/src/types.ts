@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/sort-type-union-intersection-members */
+/* eslint-disable @typescript-eslint/sort-type-constituents */
 
 import {
 	Emoticon,
@@ -75,6 +75,7 @@ export type CLDRAnnotationMap = HexcodeMap<CLDRAnnotation>;
 export type CLDRDataMap = Record<string, string>;
 
 export interface CLDRLocaleMap {
+	labels: CLDRDataMap;
 	subdivisions: CLDRDataMap;
 	territories: CLDRDataMap;
 }
@@ -151,7 +152,7 @@ export interface EmojiVariation {
 
 export type EmojiVariationMap = HexcodeMap<EmojiVariation>;
 
-export type EmoticonMap = Record<string, string | string[]>;
+export type EmoticonMap = Record<string, string[] | string>;
 
 export interface ParsedLine {
 	comment: string;

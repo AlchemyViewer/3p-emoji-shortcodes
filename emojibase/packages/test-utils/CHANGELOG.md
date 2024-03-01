@@ -1,4 +1,72 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## 15.2.0 - 2023-12-03
+
+#### 🚀 Updates
+
+- Add shortcodes for v15.1. (#167) ([44afd19](https://github.com/milesj/emojibase/commit/44afd19)), closes [#167](https://github.com/milesj/emojibase/issues/167)
+- Support Emoji v15.1. (#164) ([b2e0ec6](https://github.com/milesj/emojibase/commit/b2e0ec6)), closes [#164](https://github.com/milesj/emojibase/issues/164)
+- Use official CLDR JSON packages. (#166) ([f6b2dc9](https://github.com/milesj/emojibase/commit/f6b2dc9)), closes [#166](https://github.com/milesj/emojibase/issues/166)
+
+**Note:** Version bump only for package emojibase-test-utils
+
+
+
+
+
+## 15.1.0 - 2023-10-03
+
+#### 🚀 Updates
+
+- Support CLDR 43. (#163) ([1094148](https://github.com/milesj/emojibase/commit/1094148)), closes [#163](https://github.com/milesj/emojibase/issues/163)
+
+**Note:** Version bump only for package emojibase-test-utils
+
+
+
+
+
+# 15.0.0 - 2023-06-11
+
+#### 🎉 Release
+
+- Support emoji v15! (#146) ([55286b1](https://github.com/milesj/emojibase/commit/55286b1)), closes [#146](https://github.com/milesj/emojibase/issues/146)
+
+#### 💥 Breaking
+
+- Align emojibase version with spec. ([614dda2](https://github.com/milesj/emojibase/commit/614dda2))
+- Drop Node v14 support. Require v16.12+. ([45a889d](https://github.com/milesj/emojibase/commit/45a889d))
+
+#### 📦 Dependencies
+
+- **[packemon]** Update to v2.4.1. ([b5bff35](https://github.com/milesj/emojibase/commit/b5bff35))
+- **[packemon]** Update to v3. ([ecc31da](https://github.com/milesj/emojibase/commit/ecc31da))
+- Update dev and test dependencies. ([57b5f18](https://github.com/milesj/emojibase/commit/57b5f18))
+
+#### 🛠 Internals
+
+- Migrate from beemo to moon. (#144) ([0607d6e](https://github.com/milesj/emojibase/commit/0607d6e)), closes [#144](https://github.com/milesj/emojibase/issues/144)
+
+**Note:** Version bump only for package emojibase-test-utils
+
+
+
+
+
 > Versions that only update `test-*.json` are omitted from the changelog.
+
+# 15.0.0 - 2023-06-10
+
+#### 🎉 Release
+
+- Emojibase versions will now align with the emoji/unicode versions.
+- Updated to [Emoji 15](https://emojipedia.org/emoji-15.0/) and
+  [Unicode 15](http://unicode.org/versions/Unicode15.0.0/).
+  - 21 new emoji (31 including skin tones variations).
+- Updated to [CLDR 42](http://cldr.unicode.org/index/downloads/cldr-42).
 
 # 7.0.0 - 2021-10-15
 
