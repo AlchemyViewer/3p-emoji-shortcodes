@@ -71,8 +71,8 @@ def process_folder(data_file, cldr_file, emojibase_file, messages_file, output_f
         # The ampersand character is illegal in an XML file outside
         # of the CDATA section. They appear frequently in the groups/subgroup
         # tags - "smileys & emotions" for example - so we must replace them
-        group=group.replace(" & ", " and ")
-        subgroup=subgroup.replace(" & ", " and ")
+        group=group.replace(" & ", " &amp; ")
+        subgroup=subgroup.replace(" & ", " &amp; ")
 
         xml_shortcodes = ("".join([f'\t\t\t\t<string>:{code}:</string>\n' for code in short_code]) if isinstance(short_code, list) else f'\t\t\t\t<string>:{short_code}:</string>\n')
 
