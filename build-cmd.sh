@@ -17,17 +17,19 @@ TOP_DIR="$(dirname "$0")"
 SRC_DIR="${TOP_DIR}/emojibase"
 VERSION_PATH="${STAGING_DIR}/VERSION.txt"
 
-if [ "$OSTYPE" = "cygwin" ] ; then
+if [[ "$OSTYPE" == "cygwin" || "$OSTYPE" == "msys" ]] ; then
     autobuild="$(cygpath -u $AUTOBUILD)"
     VERSION_PATH="$(cygpath -w $VERSION_PATH)"
+    PYTHON=python
 else
     autobuild="$AUTOBUILD"
+    PYTHON=python3
 fi
 
-python3 "$TOP_DIR"/gen_emoji_characters.py "$SRC_DIR"/packages/data stage/xui
+$PYTHON "$TOP_DIR"/gen_emoji_characters.py "$SRC_DIR"/packages/data stage/xui
 
 mkdir -p "$STAGING_DIR"/LICENSES
 cp "$SRC_DIR"/LICENSE "$STAGING_DIR"/LICENSES/emojibase-license.txt
 
 # Read the EmojiBase version from core package.json file and use it to build this package version
-python3 "$TOP_DIR"/get_version.py "${SRC_DIR}/packages/data/package.json" ${VERSION_PATH} ${AUTOBUILD_BUILD_ID:=0}
+$PYTHON "$TOP_DIR"/get_version.py "${SRC_DIR}/packages/data/package.json" ${VERSION_PATH} ${AUTOBUILD_BUILD_ID:=0}
